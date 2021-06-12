@@ -1,0 +1,7 @@
+<div class="main">
+    <div class="list">
+        <product-data *ngFor="let product of productList" [product]="product" (onProductChange)='onItemAdded($event)'>
+
+        </product-data>
+    </div>
+</div>

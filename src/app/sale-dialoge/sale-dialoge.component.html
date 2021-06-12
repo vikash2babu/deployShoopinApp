@@ -1,0 +1,30 @@
+<div>
+    <h3>Recipt</h3>
+
+    <div class="date">Date: {{date | date: 'M/d/yy,h:mm:ss a'}}</div>
+
+    <div>
+        <table style="width:100%">
+            <tr>
+
+                <th>quantity</th>
+                <th>Sub Total</th>
+                <th>Total Item</th>
+                <th>Total</th>
+                <th>Discount</th>
+                <th>Vat</th>
+            </tr>
+
+            <tr>
+                <td>{{orderDetails.totalQuantity}}</td>
+                <td>{{orderDetails.subTotal}}</td>
+                <td>{{orderDetails.totalItem}}</td>
+                <td>{{orderDetails.total}}</td>
+                <td>{{orderDetails.discount}}</td>
+                <td>{{orderDetails.vat}}</td>
+            </tr>
+        </table>
+    </div>
+
+    <button (click)="onClose()">Close</button>
+</div>

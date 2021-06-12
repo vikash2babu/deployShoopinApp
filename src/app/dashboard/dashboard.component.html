@@ -1,0 +1,11 @@
+<div>
+    <h1 class="mainscreen">Main Screen</h1>
+    <div>
+        <product-table [items]="items" >
+            
+        </product-table>
+    </div>
+    <div>
+        <product-list (itemAdded)="onAddItem($event)" ></product-list>
+    </div>
+</div>

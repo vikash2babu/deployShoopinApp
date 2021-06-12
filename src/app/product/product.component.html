@@ -1,0 +1,12 @@
+<div class="main">
+    <div class="top">
+        {{product.name | uppercase}}
+        <div class="grid">
+            
+            <img [src]="getImage(product)">
+            <div *ngIf="showExtraItems">
+                {{product.price |  currency}}
+                {{product.description | uppercase}}
+            </div>
+        </div>
+    </div>

@@ -1,0 +1,15 @@
+.main-class {
+    margin: 50px 20px 30px 0px;
+    background-color: #E5E4E2;
+    width: 50%;
+    height: 700px;
+    float: right;
+}
+
+.grid > img {
+    padding-bottom: 10px;
+   
+}
+.top {
+    text-align: center;
+}
